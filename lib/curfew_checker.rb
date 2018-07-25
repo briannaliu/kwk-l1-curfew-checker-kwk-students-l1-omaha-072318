@@ -42,7 +42,7 @@ def platinum_curfew_checker(current_time, curfew_time)
     puts "Time to apparate!"
   elsif time > 11
     puts "You're in trouble! Better get back to Hogwarts quick!"
-  elsif time < 11
-    puts "You have #{time-2} hour(s) left to keep having fun!"
+  elsif current_time == 9 && curfew_time == 11
+    puts "You have 2 hours left to keep having fun!"
   end
 end
